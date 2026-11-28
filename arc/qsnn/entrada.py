@@ -3,6 +3,21 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split
+from pathlib import Path
+import numpy as np
+import torch
+from torch.utils.data import DataLoader, TensorDataset
+from sklearn.model_selection import train_test_split
+
+ROOT_DIR = Path(__file__).resolve().parents[2]
+DATA_DIR = ROOT_DIR / "data"
+
+N_QUBITS = 10
+J = 1.0
+H_C = J
+RANDOM_SEED = 42
+BATCH_SIZE = 8
+
 
 vqe_file = DATA_DIR / f"vqe_checkerboard_states_{N_QUBITS}qubits.npz"
 if not vqe_file.exists():
