@@ -1,0 +1,15 @@
+{
+  "accuracy": 1.0,
+  "precision_class1": 1.0,
+  "recall_class1": 1.0,
+  "f1_class1": 1.0,
+  "hidden_neurons": 64,
+  "output_neurons": 2,
+  "num_steps": 200,
+  "num_parameters": 131460,
+  "test_size": 20,
+  "validation_size": 12,
+  "monotonic_violations": 9,
+  "rate_logit_scale": 100.0,
+  "loss": "cross_entropy_on_output_firing_rates"
+}
